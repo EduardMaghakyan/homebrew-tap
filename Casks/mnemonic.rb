@@ -10,6 +10,7 @@ cask "mnemonic" do
   depends_on macos: ">= :sonoma"
 
   app "Mnemonic.app"
+  binary "#{appdir}/Mnemonic.app/Contents/MacOS/Mnemonic", target: "mnemonic"
 
   postflight do
     system_command "/usr/bin/tccutil", args: ["reset", "Accessibility", "com.mnemonic.app"]
