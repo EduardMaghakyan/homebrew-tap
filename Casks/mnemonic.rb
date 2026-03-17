@@ -11,6 +11,10 @@ cask "mnemonic" do
 
   app "Mnemonic.app"
 
+  postflight do
+    system_command "/usr/bin/tccutil", args: ["reset", "Accessibility", "com.mnemonic.app"]
+  end
+
   zap trash: [
     "~/.mnemonic",
   ]
