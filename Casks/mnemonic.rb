@@ -1,6 +1,6 @@
 cask "mnemonic" do
-  version "0.1.3"
-  sha256 "effde8398dcfa4d4d47b493f97025ecd9b36e40e496e267b5e05ef3dd97f3cf5"
+  version "0.1.4"
+  sha256 "8909a5b501aae87b1779203409dd33a972f8ab873e9cb27b6185b64d22c26d48"
 
   url "https://github.com/EduardMaghakyan/mnemonic/releases/download/v#{version}/Mnemonic-#{version}.zip"
   name "Mnemonic"
