@@ -5,21 +5,21 @@
 class Gitlore < Formula
   desc "Accumulated knowledge for AI-assisted codebases"
   homepage "https://github.com/EduardMaghakyan/gitlore"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/EduardMaghakyan/gitlore/releases/download/v0.1.0/gitlore_0.1.0_darwin_amd64.tar.gz"
-      sha256 "370bbdd2e0155d812eca16388a47e2ea96ce3d59585d7c31a8c2c0aebd447dff"
+      url "https://github.com/EduardMaghakyan/gitlore/releases/download/v0.2.0/gitlore_0.2.0_darwin_amd64.tar.gz"
+      sha256 "22a2be312b33b7fa0645e67a61566b330544e296c85a4c0e487ff684360a1a7e"
 
       define_method(:install) do
         bin.install "gitlore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/EduardMaghakyan/gitlore/releases/download/v0.1.0/gitlore_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9526179861a62399e0d82d20f2ff118f64158a1a26c67b29c4ec27ce82234367"
+      url "https://github.com/EduardMaghakyan/gitlore/releases/download/v0.2.0/gitlore_0.2.0_darwin_arm64.tar.gz"
+      sha256 "ee779b380f16d218c5f5831d2e0807f6a69d6d35b627b9649204e3d919f7e4da"
 
       define_method(:install) do
         bin.install "gitlore"
@@ -29,15 +29,15 @@ class Gitlore < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EduardMaghakyan/gitlore/releases/download/v0.1.0/gitlore_0.1.0_linux_amd64.tar.gz"
-      sha256 "d325522b5e603d9004c5d16039fc12a13e609c8e44ec4ad8fc3fb947a4676f2f"
+      url "https://github.com/EduardMaghakyan/gitlore/releases/download/v0.2.0/gitlore_0.2.0_linux_amd64.tar.gz"
+      sha256 "15fc726c31c17936097236a5949b2d512b73d8a86209a713f80fe2535e8d6b47"
       define_method(:install) do
         bin.install "gitlore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EduardMaghakyan/gitlore/releases/download/v0.1.0/gitlore_0.1.0_linux_arm64.tar.gz"
-      sha256 "57d494769f311556361540c1d3ae203bc1b8a6db764079043fde6fca3a8dca6d"
+      url "https://github.com/EduardMaghakyan/gitlore/releases/download/v0.2.0/gitlore_0.2.0_linux_arm64.tar.gz"
+      sha256 "e2af5b5d3556e82e420ed61de3f943260404b82f66fbd02eab804dda9a08da29"
       define_method(:install) do
         bin.install "gitlore"
       end
